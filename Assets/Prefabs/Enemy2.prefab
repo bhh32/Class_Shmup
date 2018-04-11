@@ -130,11 +130,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42809422ea08ed4c84d399bad1f4318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1703580610194368, guid: 60637ad9f1f747e4d80685564433f763,
+  bulletPrefab: {fileID: 1703580610194368, guid: f2ecda1ca30e16b4aa343065d0807084,
     type: 2}
   gunPos: {fileID: 1530921950603134}
   fireRate: 0
-  startFireRate: 4
+  startFireRate: 0.4
   bulletSpeed: 300
 --- !u!114 &114826126042704042
 MonoBehaviour:
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09f06091907cbf042b6ef4a86aefdb8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 250
+  speed: 10
 --- !u!212 &212455344040243936
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -170,6 +170,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -185,6 +186,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

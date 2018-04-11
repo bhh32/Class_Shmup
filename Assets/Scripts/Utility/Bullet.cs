@@ -8,9 +8,9 @@ public class Bullet : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.collider.CompareTag("Player"))
+        if (other.collider.CompareTag("Player") && gameObject.CompareTag("EnemyBullet"))
             other.gameObject.GetComponent<PlayerHealth>().OnHealthUpdate("damage", damageAmt);
-        else if (other.collider.CompareTag("Enemy"))
+        else if (other.collider.CompareTag("Enemy") && gameObject.CompareTag("Bullet"))
             other.gameObject.GetComponent<EnemyHealth>().OnHealthUpdate(damageAmt);
 
         Destroy(gameObject);

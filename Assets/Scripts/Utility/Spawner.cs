@@ -14,8 +14,7 @@ public class Spawner : MonoBehaviour
         spawnTimer -= Time.deltaTime;
 
         if (spawnTimer <= 0f)
-        {
-           
+        {           
            var newObj = Instantiate(objToSpawn, transform.position, Quaternion.identity) as GameObject;
 
             spawnTimer = restTime;
